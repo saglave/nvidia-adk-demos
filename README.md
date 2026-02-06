@@ -12,9 +12,9 @@ Each agent is individually wrapped as a separate NAT function and managed indepe
 
 The entire multi-agent system is wrapped as a single NAT function with internal agent composition. LLM calls and tool calls are wrapped together within a unified system.
 
-### Approach 3: [Template - To be filled]
+### Approach 3: Native Agent Support in NAT
+NAT natively supports agents and their interactions without needing to wrap them as tools. This will require adding an `agent` component to NAT and framework-specific implementation for each agent type.
 
-[Description of third approach to be added]
 
 ## Usage
 
@@ -28,26 +28,5 @@ nat run --config_file src/nat_adk_individual_wrap/configs/config.yml --input "Wh
 nat run --config_file src/nat_adk_single_wrap/configs/config.yml --input "What is the time in New York?"
 ```
 
-## Setup
-
-1. **Environment Setup**
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-
-2. **Install Dependencies**
-   ```bash
-   pip install nvidia-nat
-   ```
-
-3. **Configuration**
-   ```bash
-   cp src/nat_adk_individual_wrap/.env.template src/nat_adk_individual_wrap/.env
-   cp src/nat_adk_single_wrap/.env.template src/nat_adk_single_wrap/.env
-   ```
-   Update the `.env` files with your OpenAI API credentials and endpoints.
-
-## License
-
-Licensed under the Apache License, Version 2.0.
+### Approach 3 (Native Agent Support)
+Find the sample config file in the src/3_native_agent_component/configs/ directory.
