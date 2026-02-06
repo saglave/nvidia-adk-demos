@@ -1,0 +1,57 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "NAT ADK Run Invidual Wrap",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/nat",
+            "args": [
+                "run",
+                "--config_file",
+                "src/nat_adk_individual_wrap/configs/config.yml",
+                "--input",
+                "What is the time in new york"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/src/nat_adk_individual_wrap/.env"
+        },
+        {
+            "name": "NAT ADK Run Single Wrap",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/nat",
+            "args": [
+                "run",
+                "--config_file",
+                "src/nat_adk_single_wrap/configs/config.yml",
+                "--input",
+                "What is the time in new york"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/src/nat_adk_single_wrap/.env"
+        },
+        {
+            "name": "NAT ADK Serve",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.venv/bin/nat",
+            "args": [
+                "serve",
+                "--config_file",
+                "configs/config.yml"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/src/nat_adk_demo/.env"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 64"]
+
+
+[project]
+name = "nat_adk_single_wrap"
+version = "0.1.0"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "zstandard",
+  "matplotlib~=3.9",
+  "nvidia-nat[adk]<=1.5"
+]
+description = "NVIDIA NAT ADK single agent wrapper"
+keywords = ["ai", "agents", "tools", "adk"]
+classifiers = ["Programming Language :: Python"]
+
+
+[project.entry-points."nat.components"]
+nat_adk_single_wrap = "nat_adk_single_wrap.register"

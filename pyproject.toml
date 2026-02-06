@@ -1,0 +1,7 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 64"]
+
+
+[tool.uv.workspace]
+members = ["src/nat_adk_individual_wrap", "src/nat_adk_single_wrap"]

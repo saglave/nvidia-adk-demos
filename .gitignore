@@ -1,0 +1,133 @@
+# Environment variables and secrets
+*.env
+*.env.*
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+
+# Keep template files
+!*.env.template
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env/
+.python-version
+
+# IDE and Editor files
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Keep VS Code launch configurations but ignore other settings
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/extensions.json
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Logs
+*.log
+logs/
+.log/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Security and credentials
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+*secret*
+*password*
+*credential*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.cache/
+*.cache
+
+# Large output files (like components.txt which appears to be generated)
+components.txt
+
+# Backup files
+*.bak
+*.backup
+
+# Local configuration
+local_config.*
+config.local.*
